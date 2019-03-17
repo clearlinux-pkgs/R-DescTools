@@ -4,27 +4,44 @@
 #
 Name     : R-DescTools
 Version  : 0.99.27
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/DescTools_0.99.27.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DescTools_0.99.27.tar.gz
 Summary  : Tools for Descriptive Statistics
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-DescTools-lib = %{version}-%{release}
-Requires: R-BH
-Requires: R-Rcpp
-Requires: R-expm
-Requires: R-ineq
-Requires: R-manipulate
-Requires: R-mvtnorm
-Requires: R-randtests
+Requires: R-Hmisc
+Requires: R-caTools
+Requires: R-caret
+Requires: R-chron
+Requires: R-corrgram
+Requires: R-forecast
+Requires: R-gmp
+Requires: R-pcaPP
+Requires: R-plotrix
+Requires: R-polycor
+Requires: R-subselect
+Requires: R-vcdExtra
 BuildRequires : R-BH
+BuildRequires : R-Hmisc
 BuildRequires : R-Rcpp
+BuildRequires : R-caTools
+BuildRequires : R-caret
+BuildRequires : R-chron
+BuildRequires : R-corrgram
 BuildRequires : R-expm
+BuildRequires : R-forecast
+BuildRequires : R-gmp
 BuildRequires : R-ineq
 BuildRequires : R-manipulate
 BuildRequires : R-mvtnorm
+BuildRequires : R-pcaPP
+BuildRequires : R-plotrix
+BuildRequires : R-polycor
 BuildRequires : R-randtests
+BuildRequires : R-subselect
+BuildRequires : R-vcdExtra
 BuildRequires : buildreq-R
 
 %description
@@ -46,10 +63,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551141095
+export SOURCE_DATE_EPOCH=1552789837
 
 %install
-export SOURCE_DATE_EPOCH=1551141095
+export SOURCE_DATE_EPOCH=1552789837
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -85,8 +102,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library DescTools|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  DescTools || :
 
 
 %files
@@ -131,7 +147,7 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/DescTools/help/paths.rds
 /usr/lib64/R/library/DescTools/html/00Index.html
 /usr/lib64/R/library/DescTools/html/R.css
-/usr/lib64/R/library/DescTools/libs/symbols.rds
+/usr/lib64/R/library/DescTools/tests/misc.R
 
 %files lib
 %defattr(-,root,root,-)
