@@ -1,2 +1,28 @@
 # This file contains build requirements that get picked up but are
 # undesirable. One entry per line, no whitespace.
+# These packages are all referenced via Rd xrefs, though they are *not* present
+# in the Suggests (optional dependency) list... Ban them for now.
+R-BSDA
+R-Hmisc
+R-UsingR
+R-caTools
+R-car
+R-caret
+R-chron
+R-coin
+R-corrgram
+R-forecast
+R-gmp
+R-gtools
+R-ineq
+R-lmtest
+R-memisc
+R-pcaPP
+R-plotrix
+R-polycor
+R-prettyR
+R-randtests
+R-sfsmisc
+R-subselect
+R-vcd
+R-vcdExtra
