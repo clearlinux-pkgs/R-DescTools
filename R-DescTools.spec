@@ -4,7 +4,7 @@
 #
 Name     : R-DescTools
 Version  : 0.99.44
-Release  : 41
+Release  : 42
 URL      : https://cran.r-project.org/src/contrib/DescTools_0.99.44.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DescTools_0.99.44.tar.gz
 Summary  : Tools for Descriptive Statistics
