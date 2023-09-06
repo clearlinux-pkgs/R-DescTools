@@ -1,5 +1,5 @@
 PKG_NAME := R-DescTools
-URL = https://cran.r-project.org/src/contrib/DescTools_0.99.49.tar.gz
+URL = https://cran.r-project.org/src/contrib/DescTools_0.99.50.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

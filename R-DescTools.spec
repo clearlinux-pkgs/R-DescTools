@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-DescTools
-Version  : 0.99.49
-Release  : 58
-URL      : https://cran.r-project.org/src/contrib/DescTools_0.99.49.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/DescTools_0.99.49.tar.gz
+Version  : 0.99.50
+Release  : 59
+URL      : https://cran.r-project.org/src/contrib/DescTools_0.99.50.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/DescTools_0.99.50.tar.gz
 Summary  : Tools for Descriptive Statistics
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -70,10 +70,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684340275
+export SOURCE_DATE_EPOCH=1694013237
 
 %install
-export SOURCE_DATE_EPOCH=1684340275
+export SOURCE_DATE_EPOCH=1694013237
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
